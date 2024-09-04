@@ -7,9 +7,9 @@ Leaflet Challenge
 # Results
 
 To access the 'All Earthquakes from the Past 7 Days' interactive map for this project, either:
-1. Visit this repository's GitHub Pages site at: https://enumerbs.github.io/Module15-Challenge-Leaflet/
+1. Visit this repository's GitHub Pages site at: https://enumerbs.github.io/Module15-Challenge-Leaflet/ for the full 'Leaflet-Part-2' implementation including map layers control and optional display of tectonic plate boundaries.
 or
-1. load the ***index.html*** file for either the 'Leaflet-Part-1' or 'Leaflet-Part-2' folders from the repository in your browser.
+1. load the ***index.html*** file from the 'Leaflet-Part-1' folder from this repository in your browser, for the simpler implementation without those extra features.
 
 
 # Implementation notes
@@ -19,6 +19,11 @@ Part 1: Create the Earthquake Visualisation
 - Rather than setting an arbitrary initial map zoom level, since the data feed includes the 'bounding box' ("bbox" key in the JSON data), its latitude/longitude extents were used to set the initial map zoom level.
 - Used the 'ColorBrewer' site to choose a visually pleasing colour scale for the map points / legend (see References for details).
 - Source code initial structure (main functions) based on the student activity sample code (see References for details).
+
+Part 2: Gather and Plot More Data
+
+- The Part 1 implementation notes also apply for Part 2.
+- To work-around a CORS-related error when accessing the tectonic plate boundaries data from GitHub, the relevant JSON file was downloaded locally and included in the project as a source file. Additional comments about how this was then loaded and processed are in the source code (and see References for related details).
 
 # References
 
@@ -41,6 +46,12 @@ The following references were used in the development of the solution for this C
 ## Map points / legend colour scale
 - 'ColorBrewer' tool
     - Chosen colour scale based on the ColorBrewer '9-class Oranges' scale https://colorbrewer2.org/#type=sequential&scheme=Oranges&n=9
+
+## Reading data from a local JSON file
+- https://www.freecodecamp.org/news/how-to-read-json-file-in-javascript/
+- https://www.geeksforgeeks.org/read-json-file-using-javascript/
+- https://www.geeksforgeeks.org/how-to-access-variables-from-another-file-using-javascript/
+- https://stackoverflow.com/questions/58679410/how-can-i-use-modules-in-the-browser-but-also-refer-to-variables-and-functions
 
 ## Retrieving / processing GeoJSON data
 - Class notes/student activity files for 'Mapping', Monash University 'Data Analytics Boot Camp'
