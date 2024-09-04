@@ -11,6 +11,12 @@ To access the 'All Earthquakes from the Past 7 Days' interactive map for this pr
 or
 1. load the ***index.html*** file from the 'Leaflet-Part-1' folder from this repository in your browser, for the simpler implementation without those extra features.
 
+NOTE: if the map does not display immediately, try refreshing the page by either:
+- clicking the browser's "Reload this page" button, or
+- pressing the F5 key
+or if that still does not work, 'hard refresh' the page by either:
+- holding down the Ctrl key and then clicking the "Reload this page" button, or
+- holding down the Ctrl key and pressing the F5 key.
 
 # Implementation notes
 
@@ -52,10 +58,13 @@ The following references were used in the development of the solution for this C
     - Chosen colour scale based on the ColorBrewer '9-class Oranges' scale https://colorbrewer2.org/#type=sequential&scheme=Oranges&n=9
 
 ## Reading data from a local JSON file
-- https://www.freecodecamp.org/news/how-to-read-json-file-in-javascript/
-- https://www.geeksforgeeks.org/read-json-file-using-javascript/
-- https://www.geeksforgeeks.org/how-to-access-variables-from-another-file-using-javascript/
-- https://stackoverflow.com/questions/58679410/how-can-i-use-modules-in-the-browser-but-also-refer-to-variables-and-functions
+- Read and access local JSON file data
+    - https://www.freecodecamp.org/news/how-to-read-json-file-in-javascript/
+    - https://www.geeksforgeeks.org/read-json-file-using-javascript/
+    - https://www.geeksforgeeks.org/how-to-access-variables-from-another-file-using-javascript/
+    - https://stackoverflow.com/questions/58679410/how-can-i-use-modules-in-the-browser-but-also-refer-to-variables-and-function
+- Controlling script load order to avoid race condition
+    - https://stackoverflow.com/questions/7308908/waiting-for-dynamically-loaded-script
 
 ## Retrieving / processing GeoJSON data
 - Class notes/student activity files for 'Mapping', Monash University 'Data Analytics Boot Camp'
