@@ -24,6 +24,7 @@ Part 2: Gather and Plot More Data
 
 - The Part 1 implementation notes also apply for Part 2.
 - To work-around a CORS-related error when accessing the tectonic plate boundaries data from GitHub, the relevant JSON file was downloaded locally and included in the project as a source file. Additional comments about how this was then loaded and processed are in the source code (and see References for related details).
+- To configure GitHub pages to present the implementation from the 'Part 2' subfolder, a GitHub Action was configured to publish from that subfolder (see References for details).
 
 # References
 
@@ -32,6 +33,9 @@ The following references were used in the development of the solution for this C
 ## Data source
 - USGS GeoJSON feed
     - Past 7 days 'All earthquakes' URL https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
+
+## GitHub pages - build and deployment
+- Publishing a site from a specified repository subfolder https://stackoverflow.com/questions/42941170/how-to-set-up-github-pages-to-look-for-index-html-in-a-different-location
 
 ## HTML / CSS
 - HTML span element https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span
